@@ -1,4 +1,9 @@
 from modules import launch_utils
+import os
+os.environ['STABLE_DIFFUSION_REPO'] = "https://github.com/w-e-w/stablediffusion.git"
+print(f"Repo set to: {os.environ.get('STABLE_DIFFUSION_REPO')}")
+
+
 
 args = launch_utils.args
 python = launch_utils.python
@@ -46,3 +51,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
